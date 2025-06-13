@@ -54,10 +54,9 @@
 #define WEBSERVICE_PLACE_AUTOCOMPLETE = "https://maps.googleapis.com/maps/api/place/autocomplete/json?types=geocode&sensor=true&components=country:ro&language=ro&key="+googleBrowserKey+"&input=";
 
 #define WEBSERVICE_PLACE_DETAILS = "https://maps.googleapis.com/maps/api/place/details/json?sensor=true&key="+googleBrowserKey+"&language=ro&reference=";
-#define kGOOGLE_API_KEY @"AIzaSyC0o8w6bittIdtAuocs0XzMGNzTfFflqdQ "
-#define kGOOGLE_BROWSER_KEY @"AIzaSyD_gNr8M9sgm1hxzH_a8dITxk01XUM7ze0  "
+#define kGOOGLE_API_KEY @"secret "
+#define kGOOGLE_BROWSER_KEY @"secret  "
 
-//iosKey:AIzaSyDSdksFkMG4v1kbYp6yGEPiHd8Sfkk96SI
-//browserKey:AIzaSyB8M0XJYmlhlxj81r8WFkwWq_i78lwhWM0
+
 
 //static boolean filtersChanged = false;
