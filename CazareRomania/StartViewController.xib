@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController">
+            <connections>
+                <outlet property="ButonMareAscuns" destination="hZj-BJ-pct" id="Aiu-7s-22S"/>
+                <outlet property="IndicatorIncarcaDate" destination="0FM-sz-QE4" id="XQp-kk-iQO"/>
+                <outlet property="Localizeazama" destination="CCu-0s-ba0" id="tCN-vQ-xMw"/>
+                <outlet property="Lupa" destination="R4H-Wq-VRH" id="rQe-DV-Wpl"/>
+                <outlet property="TITLUECRAN" destination="Xev-kP-OEE" id="SSQ-4O-dWE"/>
+                <outlet property="butonMeniuSus" destination="12W-Rr-1AV" id="keu-m9-Koz"/>
+                <outlet property="filtreView" destination="fqm-XE-i2y" id="RDw-3m-GV9"/>
+                <outlet property="mapView" destination="Sx2-ZZ-nZa" id="BIM-12-93k"/>
+                <outlet property="searchBar" destination="Efu-Dk-nwf" id="bN1-uu-Pfr"/>
+                <outlet property="searchView" destination="khe-s0-Z5m" id="8Oi-Lh-KIf"/>
+                <outlet property="table" destination="tkY-hv-fxS" id="p8a-4Y-797"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rCK-V0-317"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_j.png" id="Yv0-ha-NXt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cazare Romania" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xev-kP-OEE">
+                    <rect key="frame" x="60" y="0.0" width="200" height="52"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Sx2-ZZ-nZa">
+                    <rect key="frame" x="0.0" y="52" width="320" height="600"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="12W-Rr-1AV" userLabel="Button filtre sus">
+                    <rect key="frame" x="283" y="12" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="menu_icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="butonFiltre:" destination="-1" eventType="touchUpInside" id="MrU-n6-S3i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R4H-Wq-VRH" userLabel="Button search">
+                    <rect key="frame" x="13" y="16" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="search.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowLupa:" destination="-1" eventType="touchUpInside" id="phn-lY-U6Z"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="khe-s0-Z5m" userLabel="View search btn">
+                    <rect key="frame" x="5" y="8" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="fqm-XE-i2y" userLabel="View filtre sus btn">
+                    <rect key="frame" x="276" y="8" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" tag="6000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Localitate (sau pensiune)" borderStyle="roundedRect" minimumFontSize="17" id="Efu-Dk-nwf" userLabel="Text Field  CAUTARE- Localitate (sau pensiune)" customClass="CustomTextField">
+                    <rect key="frame" x="9" y="12" width="264" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6W5-J6-tuk"/>
+                    </connections>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hZj-BJ-pct" userLabel="Button mare ascuns curata search">
+                    <rect key="frame" x="0.0" y="52" width="320" height="1132"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <state key="normal" backgroundImage="butonmareblur.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="AscundeSearch:" destination="-1" eventType="touchUpInside" id="ZYU-m6-hqu"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" id="tkY-hv-fxS">
+                    <rect key="frame" x="0.0" y="52" width="320" height="151"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vuh-H9-QIw"/>
+                        <outlet property="delegate" destination="-1" id="9U7-O4-FqR"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CCu-0s-ba0" userLabel="Button localizare">
+                    <rect key="frame" x="260" y="493" width="50" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="track-icon-on_j.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowLocalizare:" destination="-1" eventType="touchUpInside" id="35b-1q-XFj"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="0FM-sz-QE4">
+                    <rect key="frame" x="150" y="226" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="butonmareblur.png" width="320" height="600"/>
+        <image name="menu_icon.png" width="27" height="27"/>
+        <image name="search.png" width="24" height="24"/>
+        <image name="topbar_j.png" width="320" height="52"/>
+        <image name="track-icon-on_j.png" width="50" height="48"/>
+    </resources>
+</document>

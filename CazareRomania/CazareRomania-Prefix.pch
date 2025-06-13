@@ -1,0 +1,63 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "MKNetworkKit.h"
+    #import <MapKit/MapKit.h>
+
+//#define CLS_LOG(__FORMAT__, ...) //asta e pentru inlocuire crashlitics
+#import <Crashlytics/Crashlytics.h>
+#endif
+//#define CLS_LOG(__FORMAT__, ...) //asta e pentru inlocuire crashlitics
+//dev server http://dev3.activesoft.ro/~cristian/app.virtualcards.ro/index.php?module=cards_supplier_ws&action=login
+#define request1_url    @"json.infopensiuni.ro/app_cr/init/?id="
+#define login_path @"ceva"
+#define userinfo_path @"ceva"
+#define feedback_path @"ceva"
+#define statistici_path @"ceva"
+
+#define BASE_URL  @"http://json.infopensiuni.ro/"
+#define base_url @"dev3.activesoft.ro/~cristian/app.virtualcards.ro"
+#define WEBSERVICE_MARKERS_ALL  @"/all/markers/bounds/?"  // [are bifate si obiective si pensiuni]
+#define WEBSERVICE_MARKERS_OBIECTIVE   @"/obiective/markers/bounds/?" // [are bifate obiective ]
+#define WEBSERVICE_MARKERS_PENSIUNI  @"/pensiuni/markers/bounds/?" // [are bifate pensiuni]
+#define WEBSERVICE_LOCALITATE_PENSIUNI   @"pensiuni/lista/localitate/?id="
+#define WEBSERVICE_LISTA_PENSIUNI   @"pensiuni/lista/ids/?ids="
+#define WEBSERVICE_PENSIUNE   @"pensiuni/id/"
+#define WEBSERVICE_LISTA_OBIECTIVE   @"obiective/lista/ids/?ids="
+#define WEBSERVICE_OBIECTIV   @"obiective/id/"
+#define CMD_DEFAULTS  @"cmd_defaults"
+#define CMS_SUGGEST  @"cmd_suggest"
+#define CMD_MARKERS  @"cmd_markers"
+#define CMD_LOCALITATE_PENSIUNI  @"cmd_localitate_pensiuni"
+#define CMD_LISTA_PENSIUNI @"cmd_lista_pensiuni"
+#define CMD_PENSIUNE  @"cmd_pensiune"
+#define CMD_LISTA_OBIECTIVE  @"cmd_lista_obiective"
+#define CMD_OBIECTIV  @"cmd_obiectiv"
+#define CMD_ROUTE  @"cmd_route"
+#define CMD_ALL @"cmd_all" //si obiective si pensiuni
+#define kLocationLat @"CazareRomania.ro.LOCATION_LAT"
+#define kLocationLng @"CazareRomania.ro.LOCATION_LNG"
+#define WEBSERVICE_PLACE_TEXT_SEARCH = "https://maps.googleapis.com/maps/api/place/textsearch/json?key="+googleBrowserKey+"&sensor=true&components=country:ro&query=";
+
+#define WEBSERVICE_PLACE_AUTOCOMPLETE = "https://maps.googleapis.com/maps/api/place/autocomplete/json?types=geocode&sensor=true&components=country:ro&language=ro&key="+googleBrowserKey+"&input=";
+
+#define WEBSERVICE_PLACE_DETAILS = "https://maps.googleapis.com/maps/api/place/details/json?sensor=true&key="+googleBrowserKey+"&language=ro&reference=";
+#define kGOOGLE_API_KEY @"AIzaSyC0o8w6bittIdtAuocs0XzMGNzTfFflqdQ "
+#define kGOOGLE_BROWSER_KEY @"AIzaSyD_gNr8M9sgm1hxzH_a8dITxk01XUM7ze0  "
+
+//iosKey:AIzaSyDSdksFkMG4v1kbYp6yGEPiHd8Sfkk96SI
+//browserKey:AIzaSyB8M0XJYmlhlxj81r8WFkwWq_i78lwhWM0
+
+//static boolean filtersChanged = false;

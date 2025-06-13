@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EcranLocalizareViewController">
+            <connections>
+                <outlet property="ButonMareAscuns2" destination="BLh-6G-mmO" id="GV5-kw-OZc"/>
+                <outlet property="Localizeazama" destination="CCu-0s-ba0" id="tCN-vQ-xMw"/>
+                <outlet property="TITLUECRAN" destination="Xev-kP-OEE" id="jU9-hz-3cy"/>
+                <outlet property="backbutton" destination="8Wh-fM-Wa4" id="hsA-Dm-Bh9"/>
+                <outlet property="butonIstoric" destination="HtI-9X-cZQ" id="NHd-Yc-nBe"/>
+                <outlet property="coordinateLabel" destination="QcG-33-5HN" id="qCx-xe-3Bg"/>
+                <outlet property="coordinateView" destination="3fD-Al-mor" id="2zr-5b-6lQ"/>
+                <outlet property="distantaFundal" destination="bYH-ln-mVi" id="9aX-Gh-yBE"/>
+                <outlet property="mapView" destination="Sx2-ZZ-nZa" id="BIM-12-93k"/>
+                <outlet property="modificaRuta" destination="hP9-M6-ROh" id="pGQ-w9-yLY"/>
+                <outlet property="ruteButton" destination="r5Z-Xh-Alx" id="RnU-ic-00U"/>
+                <outlet property="sageataLeft" destination="tJe-hi-ftV" id="ul7-nG-8Qz"/>
+                <outlet property="searchBar" destination="Efu-Dk-nwf" id="SVF-CQ-bnz"/>
+                <outlet property="table" destination="tkY-hv-fxS" id="p8a-4Y-797"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rCK-V0-317"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topbar_j.png" id="3VZ-Jt-vFl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Sx2-ZZ-nZa">
+                    <rect key="frame" x="0.0" y="52" width="320" height="600"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="S9y-W9-xPH"/>
+                    </connections>
+                </mapView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BLh-6G-mmO">
+                    <rect key="frame" x="0.0" y="52" width="320" height="512"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <state key="normal" backgroundImage="butonmareblur.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="AscundeSearch:" destination="-1" eventType="touchUpInside" id="M2F-fS-MrY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Wh-fM-Wa4">
+                    <rect key="frame" x="2" y="6" width="69" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="  Inapoi" backgroundImage="back-btn-no-txt.png">
+                        <color key="titleColor" red="0.26753826530000002" green="0.26753826530000002" blue="0.26753826530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="bm1-Bb-TWf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localizare" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xev-kP-OEE">
+                    <rect key="frame" x="104" y="16" width="112" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" tag="6000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Punct de plecare" minimumFontSize="17" id="Efu-Dk-nwf" userLabel="Text Field  CAUTARE- Localitate (sau pensiune)" customClass="CustomTextField">
+                    <rect key="frame" x="9" y="12" width="224" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6W5-J6-tuk"/>
+                    </connections>
+                </textField>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" id="tkY-hv-fxS">
+                    <rect key="frame" x="0.0" y="52" width="320" height="151"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vuh-H9-QIw"/>
+                        <outlet property="delegate" destination="-1" id="9U7-O4-FqR"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hP9-M6-ROh">
+                    <rect key="frame" x="240" y="5" width="77" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="modificabtn_j.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowLupa:" destination="-1" eventType="touchUpInside" id="g8F-fL-Z6E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HtI-9X-cZQ">
+                    <rect key="frame" x="240" y="5" width="77" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="istoricbtn_j.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="IstoricPressed:" destination="-1" eventType="touchUpInside" id="f2L-jb-LWq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r5Z-Xh-Alx">
+                    <rect key="frame" x="247" y="6" width="70" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="buton-ruta.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowLupa:" destination="-1" eventType="touchUpInside" id="pcd-zw-TKO"/>
+                    </connections>
+                </button>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" id="3fD-Al-mor">
+                    <rect key="frame" x="73" y="499" width="240" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="distanta.png" id="bYH-ln-mVi">
+                    <rect key="frame" x="73" y="499" width="240" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CCu-0s-ba0">
+                    <rect key="frame" x="15" y="499" width="50" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" backgroundImage="track-icon-on_j.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="localizeAction:" destination="-1" eventType="touchUpInside" id="S0x-pD-5Go"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 43.809216, 25.422363" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QcG-33-5HN">
+                    <rect key="frame" x="73" y="499" width="237" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sageata-categ_j.png" id="tJe-hi-ftV">
+                    <rect key="frame" x="288" y="514" width="10" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-btn-no-txt.png" width="126" height="75"/>
+        <image name="buton-ruta.png" width="125" height="77"/>
+        <image name="butonmareblur.png" width="320" height="600"/>
+        <image name="distanta.png" width="240" height="48"/>
+        <image name="istoricbtn_j.png" width="77" height="38"/>
+        <image name="modificabtn_j.png" width="77" height="38"/>
+        <image name="sageata-categ_j.png" width="10" height="18"/>
+        <image name="topbar_j.png" width="320" height="52"/>
+        <image name="track-icon-on_j.png" width="50" height="48"/>
+    </resources>
+</document>
